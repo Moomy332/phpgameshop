@@ -81,7 +81,7 @@ $(document).ready(function(){
     var pcode = $form.find(".pcode").val();
 
     $.ajax({    //salje bazi podatke
-      url: 'action.php',
+      url: './includes/action.php',
       method:'post',
       data: {pid:pid,
             pname:pname,
