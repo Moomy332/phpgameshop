@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 require 'dbh.inc.php';
 
 if(isset($_POST['pid'])){  //ova metoda 'trazi' ako je bilo koji pid poslan od ajax requesta 
@@ -15,7 +15,7 @@ if(isset($_POST['pid'])){  //ova metoda 'trazi' ako je bilo koji pid poslan od a
     $stmt->execute();
     $res=$stmt->get_result();
     $r=$res->fetch_assoc();
-    $code=$r['gamesCode'] ?? '';
+    $code=$r['gamesCode'];
 
     if(!$code){
         $query=$conn->prepare("INSERT INTO cart(gamesName,gamesPrice,gamesImage,gamesQty,total_price,gamesCode) VALUES (?,?,?,?,?,?)");
