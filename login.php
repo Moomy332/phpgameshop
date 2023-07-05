@@ -33,7 +33,7 @@
         </div>
       </div>
       <?php
-    if(isset($_GET["error"])){
+    if(isset($_GET["error"])){       //u slucaju errora, ispisuje ove poruke
       if($_GET["error"]=="emptyinput"){
         echo "<p>Popunite sva polja!</p>";
     }
