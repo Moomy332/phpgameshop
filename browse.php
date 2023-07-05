@@ -27,7 +27,6 @@
     
     #footer{
         position: relative;
-        bottom: 0;
     }
   </style>
   <div id="bg" >
@@ -94,6 +93,12 @@ $(document).ready(function(){
       }
     });
 
+  });
+});
+
+$(document).ready(function() {
+  $("#close-btn").click(function() {
+    $(".alert-message").hide();
   });
 });
 

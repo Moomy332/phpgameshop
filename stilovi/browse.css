@@ -104,7 +104,7 @@
     width: 1300px;
     flex-wrap: wrap;
     position: relative;
-    top: 10px;
+    top: 30px;
     right: 10px;
 }
 .kockice-wrapper{
@@ -152,16 +152,28 @@
 }
 
 .alert-message{
-    position: relative;
+    position: absolute;
+    top: 83px;
+    left: 570px;
     padding: 10px;
-    border: 1px solid #000;
-    background-color: #03879e;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    background-color: #ffffff;
+    width: 40%;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
 }
 
 #close-btn{
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 12px;
+    right: 15px;
+    height: 25px;
+    width: 25px;
 }
 
 
@@ -170,7 +182,7 @@
     background-image: none;
     color: white;
     font-family: Kdam Thmor Pro;
-    height: 1400px;
+    height: 1450px;
     width: 100%;
     display: flex;
     justify-content: center;

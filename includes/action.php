@@ -29,13 +29,13 @@ if(isset($_POST['pid'])){  //ova metoda 'trazi' ako je bilo koji pid poslan od a
 
         echo '<div class="alert-message"> 
             <strong>Igra je dodana u korpu!</strong>
-            <button type="button" id="close-btn" data-dismiss="alert"></button>
+            <button type="button" id="close-btn" data-dismiss="alert">X</button>
             </div>';
     }
     else{
         echo '<div class="alert-message"> 
             <strong>Igra je vec u korpi!</strong>
-            <button type="button" id="close-btn" data-dismiss="alert"></button>
+            <button type="button" id="close-btn" data-dismiss="alert">X</button>
             </div>';
         
     }
