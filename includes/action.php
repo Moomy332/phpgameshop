@@ -27,15 +27,15 @@ if(isset($_POST['pid'])){  //ova metoda 'trazi' ako je bilo koji pid poslan od a
         $query->bind_param("sssss",$pname,$pprice,$pimage,$pprice,$pcode); //s za string, i za integer
         $query->execute();
 
-        echo '<div class="alert-message"> 
+        echo '<div id="alert-message" class="alert"> 
             <strong>Igra je dodana u korpu!</strong>
-            <button type="button" id="close-btn" data-dismiss="alert">X</button>
+            <button type="button" class="close" id="close-btn">X</button>
             </div>';
     }
     else{
-        echo '<div class="alert-message"> 
+        echo '<div id="alert-message" class="alert"> 
             <strong>Igra je vec u korpi!</strong>
-            <button type="button" id="close-btn" data-dismiss="alert">X</button>
+            <button type="button" class="close" id="close-btn">X</button>
             </div>';
         
     }

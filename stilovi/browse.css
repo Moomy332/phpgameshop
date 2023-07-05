@@ -151,7 +151,7 @@
     
 }
 
-.alert-message{
+#alert-message{
     position: absolute;
     top: 83px;
     left: 570px;
