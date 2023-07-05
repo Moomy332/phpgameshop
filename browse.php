@@ -9,6 +9,7 @@
   <link rel="icon" href="./pictures/favicon-logo.ico">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro:wght@400&amp;display=swap"data-tag="font" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://kit.fontawesome.com/a620d9a1da.js" crossorigin="anonymous"></script>
   <title>Browse games</title>
 </head>
@@ -95,13 +96,14 @@ $(document).ready(function(){
 
   });
 });
-
-$(document).ready(function() {
+</script>
+<script>
+  $(document).ready(function() {
   $("#close-btn").click(function() {
+    $(".alert-message").empty();
     $(".alert-message").hide();
   });
 });
-
 </script>
 </body>
 
