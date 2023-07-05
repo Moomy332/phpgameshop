@@ -35,7 +35,7 @@
       <div id="browse-wrapper">
         <?php
         include './includes/dbh.inc.php';
-        $stmt= $conn->prepare("SELECT * FROM games");
+        $stmt= $conn->prepare("SELECT * FROM games"); 
         $stmt->execute();
         $result=$stmt->get_result();
         while($row=$result->fetch_assoc()):
@@ -91,12 +91,26 @@ $(document).ready(function(){
             pcode:pcode},
       success:function(response){
         $("#messageAdd").html(response);
+        window.scrollTo(0,0);
+        load_cart_item_number();
       }
     });
-
   });
+  load_cart_item_number();
+
+  function load_cart_item_number(){  //automatsko brojanje broja igara u korpi
+    $.ajax({
+      url: './includes/action.php',
+      method:'get',
+      data:{cartItem:"cart_item"},
+      success:function(response){
+        $("#cart-item").html(response);
+      }
+    })
+  }
 });
 </script>
+
 </body>
 
 </html>

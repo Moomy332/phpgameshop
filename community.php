@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="./stilovi/login.css">
   <link rel="icon" href="./pictures/favicon-logo.ico">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro:wght@400&amp;display=swap"data-tag="font" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://kit.fontawesome.com/a620d9a1da.js" crossorigin="anonymous"></script>
   <title>Community</title>
   <style>
@@ -75,7 +77,45 @@
   <?php
 include_once 'footer.php'
 ?>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".browseadd-but").click(function(e){
+    e.preventDefault(); //pauzira refreshovanje stranice kad se klikne add to cart
+    var $form = $(this).closest(".form-submit");  //trazi formu, a ispod uzima vrijednosti trazenih klasa  
+    var pid = $form.find(".pid").val();
+    var pname = $form.find(".pname").val();
+    var pprice = $form.find(".pprice").val();
+    var pimage = $form.find(".pimage").val();
+    var pcode = $form.find(".pcode").val();
 
+    $.ajax({    //salje bazi podatke
+      url: './includes/action.php',
+      method:'post',
+      data: {pid:pid,
+            pname:pname,
+            pprice:pprice,
+            pimage:pimage,
+            pcode:pcode},
+      success:function(response){
+        $("#messageAdd").html(response);
+        load_cart_item_number();
+      }
+    });
+  });
+  load_cart_item_number();
+
+  function load_cart_item_number(){
+    $.ajax({
+      url: './includes/action.php',
+      method:'get',
+      data:{cartItem:"cart_item"},
+      success:function(response){
+        $("#cart-item").html(response);
+      }
+    })
+  }
+});
+</script>
 </body>
 
 </html>

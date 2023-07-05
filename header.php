@@ -13,7 +13,7 @@ session_start();
     </div>
     <?php
       if(isset($_SESSION["useruid"])){
-        echo "<button id='login-but'><a href='./cart.php'><i class='fas fa-shopping-cart'></i> <span id='cart-item'>1</span></a></button>";
+        echo "<button id='login-but'><a href='./cart.php'><i class='fas fa-shopping-cart'></i> <span id='cart-item'></span></a></button>";
         echo "<button id='register-but'><a href='./includes/logout.inc.php'>Logout</a></button>";
       }
       else{

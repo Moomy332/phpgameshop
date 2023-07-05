@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require 'dbh.inc.php';
 
 if(isset($_POST['pid'])){  //ova metoda 'trazi' ako je bilo koji pid poslan od ajax requesta 
@@ -37,8 +37,17 @@ if(isset($_POST['pid'])){  //ova metoda 'trazi' ako je bilo koji pid poslan od a
             <strong>Igra je vec u korpi!</strong>
             <button type="button" class="close" id="close-btn">X</button>
             </div>';
-        
     }
 }
 
+if(isset($_GET['cartItem']) && isset($_GET['cartItem'])=='cart_item'){
+    $stmt=$conn->prepare('SELECT * FROM cart');
+    $stmt->execute();
+    $stmt->store_result();
+    $rows=$stmt->num_rows;
+
+    echo $rows;
+}
+
+?>
 
