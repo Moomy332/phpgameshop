@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+#header {
+    background-color: rgb(34, 33, 33);
+    height: 70px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-bar {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    font-family: Kdam Thmor Pro;
+    font-weight: 100;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    width: 250px;
+}
+
+
+.nav-content:hover {
+    color: gray;
+}
+
+#logo {
+    width: 10%;
+    height: auto;
+    position: absolute;
+    left: 1%;
+}
+
+#login-but{
+    width: 140px;
+    height: 40px;
+    position: absolute;
+    left: 82.5%;
+    background-color: rgb(14, 172, 14);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    display: block;
+}
+
+#login-but:hover{
+    transition: 0.3s;
+    background-color: rgb(22, 223, 22);
+    
+}
+#login-but a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Kdam Thmor Pro;
+    color: white; 
+    display: block;
+    position: relative;
+}
+#register-but{ 
+    width: 140px;
+    height: 40px;
+    position: absolute;
+    left: 91%;
+    background-color: rgb(14, 172, 14);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    display: block;
+}
+#register-but:hover{
+    transition: 0.3s;
+    background-color: rgb(22, 223, 22);
+    color: black;
+}
+#register-but a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Kdam Thmor Pro;
+    color: white; 
+    display: block;
+    position: relative;
+}
+
+#browse-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    width: 1300px;
+    flex-wrap: wrap;
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+.kockice-wrapper{
+    padding-left: 30px;
+    width: 210px;
+    
+}
+.kockice{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+
+#donji-addtocart{
+    padding: 5px; 
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: center;
+}
+
+.browseadd-but{
+    width: 140px;
+    height: 40px;
+    background-color: rgb(14, 172, 14);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin-top: 2px;
+    display: block;
+    font-size: 18px;
+    font-family: Kdam Thmor Pro;
+    cursor: pointer;
+}
+
+.browseadd-but:hover{
+    transition: 0.3s;
+    opacity: 0.8;
+    
+}
+
+.alert-message{
+    position: relative;
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: #03879e;
+}
+
+#close-btn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+
+#bg{
+    background-color:#050844 ;
+    background-image: none;
+    color: white;
+    font-family: Kdam Thmor Pro;
+    height: 1340px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer {
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(34, 34, 34);
+}
+
+.footer-cont {
+    width: 15%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: Kdam Thmor Pro;
+
+}
+
+.Naslov-footer {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Kdam Thmor Pro;
+    font-weight: 100;
+}
+
+.footer-links {
+    color: #696161;
+    cursor: pointer;
+    margin-top: 1%;
+    transition: 0.3s;
+    font-weight: 100;
+}
+
+.footer-links:hover {
+    color: white;
+}

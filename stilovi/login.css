@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+#header {
+    background-color: rgb(34, 33, 33);
+    height: 70px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-bar {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    font-family: Kdam Thmor Pro;
+    font-weight: 100;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    width: 250px;
+}
+
+.nav-content:hover {
+    color: gray;
+}
+
+#logo {
+    width: 10%;
+    height: auto;
+    position: absolute;
+    left: 1%;
+}
+
+#login-but{
+    width: 140px;
+    height: 40px;
+    position: absolute;
+    left: 82.5%;
+    background-color: rgb(14, 172, 14);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    display: block;
+}
+
+#login-but:hover{
+    transition: 0.3s;
+    background-color: rgb(22, 223, 22);
+    
+}
+#login-but a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Kdam Thmor Pro;
+    color: white; 
+    display: block;
+    position: relative;
+}
+
+#register-but{ 
+    width: 140px;
+    height: 40px;
+    position: absolute;
+    left: 91%;
+    background-color: rgb(14, 172, 14);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    display: block;
+}
+#register-but:hover{
+    transition: 0.3s;
+    background-color: rgb(22, 223, 22);
+    color: black;
+}
+#register-but a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Kdam Thmor Pro;
+    color: white; 
+    display: block;
+    position: relative;
+}
+
+#bg {
+    height: 733px;
+    background-image: url(http://localhost/gameshop/pictures/pexels-jeshootscom-442576.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+#login-window {
+    background-color: rgb(90, 88, 88);
+    width: 600px;
+    height: 360px;
+    border-radius: 5px;
+    display: flex;
+    position: relative;
+    top: -20%;
+
+
+}
+
+#sign-register {
+    position: absolute;
+    top: 0;
+    height: 90px;
+    width: 600px;
+    display: flex;
+    font-family: Kdam Thmor Pro;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#sign-register a{
+    width: 50%;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#lijevi-sign{
+    background-color: rgb(167, 172, 172);
+    height: 100%;
+    width: 100%;
+}
+#desni-sign{
+    
+    height: 100%;
+    width: 100%;
+}
+#lijevi-sign:hover{
+    opacity: 0.8;
+}
+
+#input-blok {
+    width: 100%;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 88px;
+
+}
+#bg p{
+    font-weight: 100;
+    font-family: Kdam Thmor Pro;
+    font-size: 20px;
+    position: absolute;
+    top: 430px;
+    color: #ffffff;
+}
+
+
+#formapon{
+    width: 100%;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.inputi {
+    width: 70%;
+    height: 50px;
+    border-radius: 3px;
+    margin-bottom: 12px;
+    font-size: 20px;
+    padding-left: 15px;
+    font-family: Kdam Thmor Pro;
+    font-size: 20px;
+    border: 10px;
+}
+
+#login-dugme {
+    width: 70%;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: rgb(14, 172, 14);
+    border: none;
+    color: white;
+    font-family: Kdam Thmor Pro;
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+#login-dugme:hover {
+    opacity: 0.8;
+}
+
+
+
+#footer {
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(34, 34, 34);
+}
+
+.footer-cont {
+    width: 15%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: Kdam Thmor Pro;
+
+}
+
+.Naslov-footer {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Kdam Thmor Pro;
+    font-weight: 100;
+}
+
+.footer-links {
+    color: #696161;
+    cursor: pointer;
+    margin-top: 1%;
+    transition: 0.3s;
+    font-weight: 100;
+}
+
+.footer-links:hover {
+    color: white;
+}
