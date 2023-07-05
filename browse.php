@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./stilovi/browse.css">
   <link rel="icon" href="./pictures/favicon-logo.ico">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro:wght@400&amp;display=swap"data-tag="font" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/a620d9a1da.js" crossorigin="anonymous"></script>
   <title>Browse games</title>
 </head>
