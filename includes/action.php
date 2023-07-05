@@ -14,8 +14,13 @@ if(isset($_POST['pid'])){  //ova metoda 'trazi' ako je bilo koji pid poslan od a
     $stmt->bind_param("s",$pcode);
     $stmt->execute();
     $res=$stmt->get_result();
-    $r=$res->fetch_assoc();
-    $code=$r['gamesCode'];
+    
+    if ($res && $res->num_rows > 0) {
+        $r = $res->fetch_assoc();
+        $code = $r['gamesCode'];
+    } else {
+        $code = null;
+    }
 
     if(!$code){
         $query=$conn->prepare("INSERT INTO cart(gamesName,gamesPrice,gamesImage,gamesQty,total_price,gamesCode) VALUES (?,?,?,?,?,?)");
