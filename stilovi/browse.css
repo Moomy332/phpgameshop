@@ -101,15 +101,16 @@
 #browse-wrapper{
     display: flex;
     justify-content: flex-start;
-    width: 1300px;
+    width: 1500px;
     flex-wrap: wrap;
     position: relative;
     top: 30px;
-    right: 10px;
+    right: 50px;
 }
 .kockice-wrapper{
     padding-left: 30px;
-    width: 210px;
+    width: 220px;
+    margin-left: 30px;
     
 }
 .kockice{
@@ -120,7 +121,7 @@
     border-radius: 3px;
     padding: 5px;
     margin-bottom: 20px;
-    width: 200px;
+    width: 230px;
 }
 
 
