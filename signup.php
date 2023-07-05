@@ -56,7 +56,7 @@
       echo " <p>Izaberite drugi username!</p>";
   }
   else if($_GET["error"]=="none"){
-  echo " <p>Prijavili ste se!</p>";
+  echo " <p>Registrovali ste se!</p>";
   }
 }
   ?>
