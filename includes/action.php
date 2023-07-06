@@ -8,14 +8,13 @@ if(isset($_POST['pid'])){  //ova metoda 'trazi' ako je bilo koji pid poslan od a
     $pprice=$_POST['pprice'];
     $pimage=$_POST['pimage'];
     $pcode=$_POST['pcode'];
-    //$pqty=1; //mozda stavim
 
     $stmt=$conn->prepare("SELECT gamesCode FROM cart WHERE gamesCode=?"); //provjeravamo je li item koji se dodaje u korpu VEC u korpi
     $stmt->bind_param("s",$pcode);
     $stmt->execute();
     $res=$stmt->get_result();
     
-    if ($res && $res->num_rows > 0) {
+    if ($res && $res->num_rows > 0) { 
         $r = $res->fetch_assoc();
         $code = $r['gamesCode'];
     } else {
