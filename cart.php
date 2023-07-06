@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./pictures/favicon-logo.ico">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro:wght@400&amp;display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro:wght@400&amp;display=swap"
+        data-tag="font" />
     <link rel="stylesheet" href="./stilovi/login.css">
     <title>Cart</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -22,34 +23,27 @@
 <body>
     <?php
     include_once 'header.php'
-    ?>
+        ?>
     <div id="bg">
         <div class="row">
-            
         </div>
-
-
-
-
-
-
     </div>
 
     <?php
     include_once 'footer.php'
-    ?>
+        ?>
     <script type="text/javascript">
-        $(document).ready(function() {
-            $(".browseadd-but").click(function(e) {
-                e.preventDefault(); //pauzira refreshovanje stranice kad se klikne add to cart
-                var $form = $(this).closest(".form-submit"); //trazi formu, a ispod uzima vrijednosti trazenih klasa  
+        $(document).ready(function () {
+            $(".browseadd-but").click(function (e) {
+                e.preventDefault(); // Pause refreshing the page when "Add to cart" is clicked
+                var $form = $(this).closest(".form-submit"); // Find the form and extract the values from the specified classes  
                 var pid = $form.find(".pid").val();
                 var pname = $form.find(".pname").val();
                 var pprice = $form.find(".pprice").val();
                 var pimage = $form.find(".pimage").val();
                 var pcode = $form.find(".pcode").val();
 
-                $.ajax({ //salje bazi podatke
+                $.ajax({ // Send data to the server
                     url: './includes/action.php',
                     method: 'post',
                     data: {
@@ -59,26 +53,27 @@
                         pimage: pimage,
                         pcode: pcode
                     },
-                    success: function(response) {
+                    success: function (response) {
                         $("#messageAdd").html(response);
                         window.scrollTo(0, 0);
                         load_cart_item_number();
                     }
                 });
             });
+
             load_cart_item_number();
 
-            function load_cart_item_number() { //automatsko brojanje broja igara u korpi
+            function load_cart_item_number() { // Auto-update the cart item count
                 $.ajax({
                     url: './includes/action.php',
                     method: 'get',
                     data: {
                         cartItem: "cart_item"
                     },
-                    success: function(response) {
+                    success: function (response) {
                         $("#cart-item").html(response);
                     }
-                })
+                });
             }
         });
     </script>
