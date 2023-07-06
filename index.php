@@ -51,8 +51,8 @@
         ?>
         <div class="kockice-wrapper" >
             <div class="kockice" >
-              <img src="<?=$row['gamesImage']?>" height="280"> 
-              <div style="padding: 5px; font-size: 25px;">
+              <img src="<?=$row['gamesImage']?>" height="280" > 
+              <div class="ime-wrapper">
               <h5 style="color: red; text-align:center"><?=$row['gamesName']?></h5>
               <h5 style="color: black; text-align:center"><?=number_format($row['gamesPrice']) ?> KM</h5>
               </div>

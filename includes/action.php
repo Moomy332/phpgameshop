@@ -40,7 +40,7 @@ if(isset($_POST['pid'])){  //ova metoda 'trazi' ako je bilo koji pid poslan od a
     }
 }
 
-if(isset($_GET['cartItem']) && isset($_GET['cartItem'])=='cart_item'){
+if(isset($_GET['cartItem']) && isset($_GET['cartItem'])=='cart_item'){  //funkcija za racunanje stvari u korpi
     $stmt=$conn->prepare('SELECT * FROM cart');
     $stmt->execute();
     $stmt->store_result();

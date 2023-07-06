@@ -115,7 +115,13 @@
       }
     });
   </script>
-
+<script> 
+$(document).ready(function() { 
+  $("#close-btn").click(function() { 
+    $('#alert-message').hide(); 
+  }); 
+}); 
+</script> 
 </body>
 
 </html>

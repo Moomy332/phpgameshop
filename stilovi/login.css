@@ -101,7 +101,7 @@
 
 #bg {
     height: 733px;
-    background-image: url(/pictures/pozadina.jpg);
+    background-image: url(../pictures/pozadina.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
