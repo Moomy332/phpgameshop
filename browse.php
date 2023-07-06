@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./stilovi/browse.css">
   <link rel="icon" href="./pictures/favicon-logo.ico">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro:wght@400&amp;display=swap" data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro:wght@400&amp;display=swap"
+    data-tag="font" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://kit.fontawesome.com/a620d9a1da.js" crossorigin="anonymous"></script>
@@ -17,7 +18,7 @@
 <body>
   <?php
   include_once 'header.php'
-  ?>
+    ?>
   <style>
     #browse-boja {
       color: rgb(51, 255, 0);
@@ -39,14 +40,18 @@
       $stmt = $conn->prepare("SELECT * FROM games");
       $stmt->execute();
       $result = $stmt->get_result();
-      while ($row = $result->fetch_assoc()) :
-      ?>
+      while ($row = $result->fetch_assoc()):
+        ?>
         <div class="kockice-wrapper">
           <div class="kockice">
             <img src="<?= $row['gamesImage'] ?>" height="280">
             <div style=" font-size: 25px;">
-              <h5 style="color: red; text-align:center"><?= $row['gamesName'] ?></h5>
-              <h5 style="color: black; text-align:center"><?= number_format($row['gamesPrice']) ?> KM</h5>
+              <h5 style="color: red; text-align:center">
+                <?= $row['gamesName'] ?>
+              </h5>
+              <h5 style="color: black; text-align:center">
+                <?= number_format($row['gamesPrice']) ?> KM
+              </h5>
             </div>
             <div id="donji-addtocart">
               <form class="form-submit">
@@ -61,7 +66,7 @@
             </div>
           </div>
         </div>
-      <?php
+        <?php
       endwhile;
       ?>
     </div>
@@ -69,11 +74,11 @@
 
   <?php
   include_once 'footer.php'
-  ?>
+    ?>
 
   <script type="text/javascript">
-    $(document).ready(function() {
-      $(".browseadd-but").click(function(e) {
+    $(document).ready(function () {
+      $(".browseadd-but").click(function (e) {
         e.preventDefault(); //pauzira refreshovanje stranice kad se klikne add to cart
         var $form = $(this).closest(".form-submit"); //trazi formu, a ispod uzima vrijednosti trazenih klasa  
         var pid = $form.find(".pid").val();
@@ -92,7 +97,7 @@
             pimage: pimage,
             pcode: pcode
           },
-          success: function(response) {
+          success: function (response) {
             $("#messageAdd").html(response);
             window.scrollTo(0, 0);
             load_cart_item_number();
@@ -108,20 +113,20 @@
           data: {
             cartItem: "cart_item"
           },
-          success: function(response) {
+          success: function (response) {
             $("#cart-item").html(response);
           }
         })
       }
     });
   </script>
-<script> 
-$(document).ready(function() { 
-  $("#close-btn").click(function() { 
-    $('#alert-message').hide(); 
-  }); 
-}); 
-</script> 
+  <script>
+    $(document).ready(function () {
+      $("#close-btn").click(function () {
+        $('#alert-message').hide();
+      });
+    });
+  </script>
 </body>
 
 </html>
