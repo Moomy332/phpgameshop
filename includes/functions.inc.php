@@ -13,7 +13,7 @@ return $result;
 
 function invalidUid($username){
     $result;
-    if(!preg_match("/^[a-zA-Z0-9]*$/", $username)){
+    if(!preg_match("/^[a-zA-Z0-9]*$/", $username)){ //funckija koja gleda pattern upisa
         $result=true;
     }
 else{

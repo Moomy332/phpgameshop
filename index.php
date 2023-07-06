@@ -21,11 +21,10 @@
   ?>
   <style>
     #home-boja {
-      color: rgb(51, 255, 0);
+      color: rgb(209, 0, 0);
     }
-
     #home-boja:hover {
-      color: rgb(21, 128, 0);
+      color: #931621;
     }
   </style>
   <div id="bg">
@@ -53,8 +52,8 @@
             <div class="kockice" >
               <img src="<?=$row['gamesImage']?>" height="280" width="210" > 
               <div class="ime-wrapper">
-              <h5 style="color: red; text-align:center"><?=$row['gamesName']?></h5>
-              <h5 style="color: black; text-align:center"><?=number_format($row['gamesPrice']) ?> KM</h5>
+              <h5 style="color: #495867; text-align:center"><?=$row['gamesName']?></h5>
+              <h5 style="color: #495867; text-align:center"><?=number_format($row['gamesPrice']) ?> KM</h5>
               </div>
               <div id="donji-addtocart">
                 <form class="form-submit">

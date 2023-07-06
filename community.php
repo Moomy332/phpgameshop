@@ -14,7 +14,7 @@
   <title>Community</title>
   <style>
     #bg{
-        background-color:#050844 ;
+        background-color:#495867 ;
         background-image: none;
         color: white;
         font-family: Kdam Thmor Pro;
@@ -43,11 +43,11 @@
   ?>
 <style>
     #community-boja {
-      color: rgb(51, 255, 0);
+      color: rgb(209, 0, 0);
     
 }
 #community-boja:hover{
-  color: rgb(21, 128, 0);
+  color: #931621;
 }
   </style>
   <div id="bg">

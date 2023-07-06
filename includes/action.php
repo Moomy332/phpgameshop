@@ -53,15 +53,23 @@ if(isset($_GET['remove'])){ //brisanje jedne po jedne igre u korpu na klik kante
     $stmt=$conn->prepare("DELETE FROM cart WHERE cartId=?");
     $stmt-> bind_param("i",$id);
     $stmt->execute();
-
     $_SESSION['showAlert'] ='block';
     $_SESSION['message']='Igra izbrisana iz korpe!';
     header('location:../cart.php');
 }
 
+if(isset($_GET['clear'])){ //brise sve igre iz korpe
+    $stmt=$conn->prepare("DELETE FROM cart");
+    $stmt->execute();
+    header('location:../cart.php');
+    $_SESSION['showAlert'] ='block';
+    $_SESSION['message']='Sve igre izbrisane!';
+}
+
+
 ?>
 <script> 
-$(document).ready(function() { 
+$(document).ready(function() { // kad se klikne na x, ugasi div
   $("#close-btn").click(function() { 
     $('#alert-message').hide(); 
   }); 

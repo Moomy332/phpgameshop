@@ -12,12 +12,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://kit.fontawesome.com/a620d9a1da.js" crossorigin="anonymous"></script>
-    <style>
-        #bg {
-            background-color: #ffffff;
-            background-image: none;
-        }
-    </style>
 </head>
 
 <body>
@@ -27,8 +21,8 @@
         <div class="container-wrapper">
             <div class="row">
                 <div class="alert-wrapper">
-                <div id="alert-message" class="alert" style="display: <?php if(isset($_SESSION['showAlert'])){echo $_SESSION['showAlert'];}else{ echo 'none'; } unset($_SESSION['showAlert']); ?> ;"> 
-                    <strong></strong>
+                <div id="alert-message" class="alert" style="display: <?php if(isset($_SESSION['showAlert'])){echo $_SESSION['showAlert'];}else{ echo 'none'; } unset($_SESSION['showAlert']); ?>"> 
+                    <strong><?php if(isset($_SESSION['message'])){echo $_SESSION['message'];} unset($_SESSION['message']); ?></strong>
                     <button type="button" class="close" id="close-btn">X</button>
                 </div>
                     <div class="table-res">
@@ -36,7 +30,7 @@
                             <thead>
                                 <tr>
                                     <td colspan="5">
-                                       <h4>Products in your cart</h4> 
+                                       <h4 style="font-size: 30px; border-bottom:2px solid white;margin-bottom:10px;">Products in your cart</h4> 
                                     </td>
                                 </tr>
                                 <tr style="border-bottom: 2px solid white;">
@@ -72,10 +66,10 @@
                                 <?php endwhile; ?>
                                 <tr class="options-bottom" style="border: 1px solid white;">
                                     <td>
-                                        <button class="cont-shop"><a style="color: #ffffff;" href="./browse.php">Continue shopping</a></button>
+                                        <button class="cont-shop" style="text-align: center;"><a style="color: #ffffff;" href="./browse.php">Continue shopping</a></button>
                                     </td>
                                     <td colspan="2"><b>Grand total: </b></td>
-                                    <td><?=number_format($grand_total) ?></td>
+                                    <td><?=number_format($grand_total) ?> KM</td>
                                     <td>
                                         <button class="cont-shop "><a style="color: #ffffff;" href="./place-order.php">Place order</a></button>
                                         

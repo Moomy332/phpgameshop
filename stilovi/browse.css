@@ -5,7 +5,7 @@
     
 }
 #header {
-    background-color: rgb(34, 33, 33);
+    background-color: #bdd5ea;
     height: 70px;
     display: flex;
     text-align: center;
@@ -18,7 +18,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
+    
 }
 
 .nav-content {
@@ -29,7 +29,7 @@
     font-family: Kdam Thmor Pro;
     font-weight: 100;
     font-size: 20px;
-    color: #ffffff;
+    color: #577399;
     cursor: pointer;
     transition: 0.3s;
     text-decoration: none;
@@ -38,7 +38,7 @@
 
 
 .nav-content:hover {
-    color: gray;
+    color: #931621;
 }
 
 #logo {
@@ -53,7 +53,7 @@
     height: 40px;
     position: absolute;
     left: 82.5%;
-    background-color: rgb(14, 172, 14);
+    background-color: rgb(209, 0, 0);
     border: none;
     border-radius: 3px;
     color: white;
@@ -62,7 +62,7 @@
 
 #login-but:hover{
     transition: 0.3s;
-    background-color: rgb(22, 223, 22);
+    background-color: #931621;
     
 }
 #login-but a{
@@ -78,7 +78,7 @@
     height: 40px;
     position: absolute;
     left: 91%;
-    background-color: rgb(14, 172, 14);
+    background-color: rgb(209, 0, 0);
     border: none;
     border-radius: 3px;
     color: white;
@@ -86,7 +86,7 @@
 }
 #register-but:hover{
     transition: 0.3s;
-    background-color: rgb(22, 223, 22);
+    background-color: #931621;
     color: black;
 }
 #register-but a{
@@ -116,8 +116,8 @@
 .kockice{
     display: flex;
     flex-direction: column;
-    background-color: white;
-    border: 1px solid white;
+    background-color: #bdd5ea;
+    border: 1px solid #bdd5ea;
     border-radius: 3px;
     padding: 5px;
     margin-bottom: 40px;
@@ -137,7 +137,7 @@
 .browseadd-but{
     width: 140px;
     height: 40px;
-    background-color: rgb(14, 172, 14);
+    background-color: rgb(209, 0, 0);
     border: none;
     border-radius: 3px;
     color: white;
@@ -159,16 +159,16 @@
     top: 83px;
     left: 570px;
     padding: 10px;
-    border: 1px solid #ffffff;
+    border: 1px solid rgb(209, 0, 0);
     border-radius: 3px;
-    background-color: #ffffff;
+    background-color: rgb(209, 0, 0);
     width: 40%;
     text-align: center;
     font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #000000;
+    color: white;
 }
 
 #close-btn{
@@ -181,7 +181,7 @@
 
 
 #bg{
-    background-color:#050844 ;
+    background-color: #495867;
     background-image: none;
     color: white;
     font-family: Kdam Thmor Pro;
@@ -200,7 +200,7 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-    background-color: rgb(34, 34, 34);
+    background-color: #bdd5ea;
 }
 
 .footer-cont {
@@ -216,14 +216,14 @@
 }
 
 .Naslov-footer {
-    color: #ffffff;
+    color: #1c1d1f;
     font-size: 20px;
     font-family: Kdam Thmor Pro;
     font-weight: 100;
 }
 
 .footer-links {
-    color: #696161;
+    color: #606266;
     cursor: pointer;
     margin-top: 1%;
     transition: 0.3s;
@@ -231,5 +231,5 @@
 }
 
 .footer-links:hover {
-    color: white;
+    color: #577399;
 }

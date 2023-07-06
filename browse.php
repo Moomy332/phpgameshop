@@ -21,11 +21,11 @@
   ?>
   <style>
     #browse-boja {
-      color: rgb(51, 255, 0);
+      color: rgb(209, 0, 0);
     }
 
     #browse-boja:hover {
-      color: rgb(21, 128, 0);
+      color: #931621;
     }
 
     #footer {
@@ -46,10 +46,10 @@
           <div class="kockice">
             <img src="<?= $row['gamesImage'] ?>" height="280" width="210">
             <div style=" font-size: 25px;">
-            <h5 style="color: red; text-align:center">
+            <h5 style="color: #495867; text-align:center">
                 <?= $row['gamesName'] ?>
               </h5>
-              <h5 style="color: black; text-align:center">
+              <h5 style="color: #495867; text-align:center">
                 <?= number_format($row['gamesPrice']) ?> KM
               </h5>
             </div>
