@@ -23,7 +23,6 @@
     <?php
     include_once 'header.php'
     ?>
-    <main>
         <div class="container-wrapper">
             <div class="row">
                 <div style="width: 83.33%;">
@@ -83,7 +82,7 @@
                 </div>
             </div>
         </div>
-    </main>
+    
 
 
 
