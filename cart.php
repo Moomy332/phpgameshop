@@ -46,7 +46,7 @@
 
                             </thead>
                             <tbody>
-                                <?php
+                                <?php  //update korpe sa dodanim itemima
                                 require './includes/dbh.inc.php';
                                 $stmt = $conn->prepare("SELECT * FROM cart");
                                 $stmt->execute();

@@ -44,7 +44,6 @@ if(isset($_GET['cartItem']) && isset($_GET['cartItem'])=='cart_item'){  //funkci
     $stmt->execute();
     $stmt->store_result();
     $rows=$stmt->num_rows;
-
     echo $rows;
 }
 
