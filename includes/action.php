@@ -47,6 +47,18 @@ if(isset($_GET['cartItem']) && isset($_GET['cartItem'])=='cart_item'){  //funkci
     echo $rows;
 }
 
+if(isset($_GET['remove'])){ //brisanje jedne po jedne igre u korpu na klik kante
+    $id= $_GET['remove'];
+
+    $stmt=$conn->prepare("DELETE FROM cart WHERE cartId=?");
+    $stmt-> bind_param("i",$id);
+    $stmt->execute();
+
+    $_SESSION['showAlert'] ='block';
+    $_SESSION['message']='Igra izbrisana iz korpe!';
+    header('location:../cart.php');
+}
+
 ?>
 <script> 
 $(document).ready(function() { 
