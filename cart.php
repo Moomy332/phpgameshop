@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./pictures/favicon-logo.ico">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro:wght@400&amp;display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro:wght@400&amp;display=swap"
+        data-tag="font" />
     <link rel="stylesheet" href="./stilovi/cart.css">
     <title>Cart</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -86,14 +87,6 @@
                 </div>
             </div>
         </div>
-    
-
-
-
-
-
-
-
     <?php
     include_once 'footer.php'
     ?>

@@ -37,13 +37,18 @@
       </div>
     </div>
     <?php
-    if (isset($_GET["error"])) {       //u slucaju errora, ispisuje ove poruke
-      if ($_GET["error"] == "emptyinput") {
-        echo "<p>Popunite sva polja!</p>";
-      } else if ($_GET["error"] == "wronglogin") {
-        echo " <p>Pogresni login podaci!</p>";
-      }
-    }
+        if (isset($_GET["error"])) {
+          switch ($_GET["error"]) {
+            case "emptyinput":
+              echo "<p>Popunite sva polja!</p>";
+              break;
+            case "wronglogin":
+              echo "<p>Pogresni login podaci!</p>";
+              break;
+            default:
+              echo "<p>Popunite sva polja!</p>";
+          }
+        }
     ?>
   </div>
   <?php
