@@ -1,7 +1,3 @@
-<?php
-session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,7 +25,11 @@ session_start();
     ?>
         <div class="container-wrapper">
             <div class="row">
-                <div style="width: 83.33%;">
+                <div class="alert-wrapper">
+                <div id="alert-message" class="alert" style="display: <?php if(isset($_SESSION['showAlert'])){echo $_SESSION['showAlert'];}else{ echo 'none'; } unset($_SESSION['showAlert']); ?> ;"> 
+                    <strong></strong>
+                    <button type="button" class="close" id="close-btn">X</button>
+                </div>
                     <div class="table-res">
                         <table class="table-border">
                             <thead>
