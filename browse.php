@@ -43,7 +43,7 @@
       ?>
         <div class="kockice-wrapper">
           <div class="kockice">
-            <img src="<?= $row['gamesImage'] ?>" height="280">
+            <img src="<?= $row['gamesImage'] ?>" height="280" width="200">
             <div style=" font-size: 25px;">
               <h5 style="color: red; text-align:center"><?= $row['gamesName'] ?></h5>
               <h5 style="color: black; text-align:center"><?= number_format($row['gamesPrice']) ?> KM</h5>
@@ -92,8 +92,8 @@
             pimage: pimage,
             pcode: pcode
           },
-          success: function(response) {
-            $("#messageAdd").html(response);
+          success: function(response) { //ako je sve kako treba, izadje poruka na vrhu maina, i scrolla se na vrh stranice
+            $("#messageAdd").html(response);  
             window.scrollTo(0, 0);
             load_cart_item_number();
           }
@@ -115,13 +115,7 @@
       }
     });
   </script>
-<script> 
-$(document).ready(function() { 
-  $("#close-btn").click(function() { 
-    $('#alert-message').hide(); 
-  }); 
-}); 
-</script> 
+
 </body>
 
 </html>

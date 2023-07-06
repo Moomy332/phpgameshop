@@ -2,8 +2,31 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
 }
+html,body{
+    background-color: #050844;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    flex-grow: 1;
+  }
+
+th,td, h4{
+    font-family: Kdam Thmor Pro;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+}
+
 #header {
     background-color: rgb(34, 33, 33);
     height: 70px;
@@ -36,7 +59,6 @@
     width: 250px;
 }
 
-
 .nav-content:hover {
     color: gray;
 }
@@ -48,7 +70,7 @@
     left: 1%;
 }
 
-#login-but{
+#login-but {
     width: 140px;
     height: 40px;
     position: absolute;
@@ -60,20 +82,22 @@
     display: block;
 }
 
-#login-but:hover{
+#login-but:hover {
     transition: 0.3s;
     background-color: rgb(22, 223, 22);
-    
+
 }
-#login-but a{
+
+#login-but a {
     text-decoration: none;
     font-size: 18px;
     font-family: Kdam Thmor Pro;
-    color: white; 
+    color: white;
     display: block;
     position: relative;
 }
-#register-but{ 
+
+#register-but {
     width: 140px;
     height: 40px;
     position: absolute;
@@ -84,118 +108,95 @@
     color: white;
     display: block;
 }
-#register-but:hover{
+
+#register-but:hover {
     transition: 0.3s;
     background-color: rgb(22, 223, 22);
     color: black;
 }
-#register-but a{
+
+#register-but a {
     text-decoration: none;
     font-size: 18px;
     font-family: Kdam Thmor Pro;
-    color: white; 
+    color: white;
     display: block;
     position: relative;
 }
 
-#browse-wrapper{
-    display: flex;
-    justify-content: flex-start;
-    width: 1500px;
-    flex-wrap: wrap;
-    position: relative;
-    top: 30px;
-    right: 50px;
+
+.container-wrapper {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
 }
-.kockice-wrapper{
-    padding-left: 30px;
-    width: 220px;
-    margin-left: 30px;
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: center;
     
 }
-.kockice{
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border: 1px solid white;
+
+.table-res {
+    overflow-x: auto;
+    margin-top: 2rem;
+    border: #9c9494 1px;
+}
+
+.table-border {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+    border: 1px solid #cecfcf;
     border-radius: 3px;
-    padding: 5px;
-    margin-bottom: 40px;
-    width: 230px;
-    justify-content: center;
-    align-items: center;
+    padding: 0.75rem;
+    vertical-align: top;
+    text-align: center;
 }
 
-
-#donji-addtocart{
-    padding: 5px; 
-    border-top: 1px solid gray;
-    display: flex;
-    justify-content: center;
-}
-
-.browseadd-but{
-    width: 140px;
-    height: 40px;
-    background-color: rgb(14, 172, 14);
+.clear-cart{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(255, 0, 0);
     border: none;
     border-radius: 3px;
     color: white;
-    margin-top: 2px;
-    display: block;
-    font-size: 18px;
     font-family: Kdam Thmor Pro;
-    cursor: pointer;
+    display: block;
+    position: relative;
+    left:130px ;
+    bottom: 10px;
+
 }
 
-.browseadd-but:hover{
-    transition: 0.3s;
-    opacity: 0.8;
-    
-}
-
-#alert-message{
-    position: absolute;
-    top: 83px;
-    left: 570px;
-    padding: 10px;
-    border: 1px solid #ffffff;
+.cont-shop{
+    width: 180px;
+    height: 30px;
+    background-color: rgb(7, 160, 27);
+    border: none;
     border-radius: 3px;
-    background-color: #ffffff;
-    width: 40%;
-    text-align: center;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #000000;
-}
-
-#close-btn{
-    position: absolute;
-    top: 12px;
-    right: 15px;
-    height: 25px;
-    width: 25px;
-}
-
-
-#bg{
-    background-color:#050844 ;
-    background-image: none;
     color: white;
     font-family: Kdam Thmor Pro;
-    height: 1450px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 18px;
+    display: block;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    
+    
 }
 
 #footer {
     height: 150px;
-    position: absolute;
-    bottom: 0;
+    flex-shrink: 0;
+    
     display: flex;
     width: 100%;
     align-items: center;

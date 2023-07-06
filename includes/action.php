@@ -50,4 +50,11 @@ if(isset($_GET['cartItem']) && isset($_GET['cartItem'])=='cart_item'){  //funkci
 }
 
 ?>
+<script> 
+$(document).ready(function() { 
+  $("#close-btn").click(function() { 
+    $('#alert-message').hide(); 
+  }); 
+}); 
+</script> 
 
