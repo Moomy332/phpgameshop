@@ -65,8 +65,8 @@
                                     </tr>
                                     <?php $grand_total += $row['gamesPrice']; ?>
                                 <?php endwhile; ?>
-                                <tr>
-                                    <td >
+                                <tr class="options-bottom" style="border: 1px solid white;">
+                                    <td>
                                         <button class="cont-shop"><a style="color: #ffffff;" href="./browse.php">Continue shopping</a></button>
                                     </td>
                                     <td colspan="2"><b>Grand total: </b></td>

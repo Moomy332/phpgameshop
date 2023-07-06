@@ -43,7 +43,7 @@
       ?>
         <div class="kockice-wrapper">
           <div class="kockice">
-            <img src="<?= $row['gamesImage'] ?>" height="280" width="200">
+            <img src="<?= $row['gamesImage'] ?>" height="280" width="210">
             <div style=" font-size: 25px;">
               <h5 style="color: red; text-align:center"><?= $row['gamesName'] ?></h5>
               <h5 style="color: black; text-align:center"><?= number_format($row['gamesPrice']) ?> KM</h5>
